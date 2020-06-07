@@ -1,0 +1,38 @@
+<div>
+  <div fxLayout="row" style="padding-top: 1.8rem;">
+    <div fxLayout="column" fxFlex="70">
+      <span style="text-align: center;font-size: 1.2rem;">
+       <b>Vision</b>
+      </span>
+    </div>
+    <div fxLayout="column" fxFlex="30" >
+      <div>
+       <label style="font-size: 1.2rem;"> Menu</label>
+       <span style="padding-left: 5px;">
+        <button mat-mini-fab style="background-color:#F1C9DB;" aria-label="Example icon button with a menu icon"  (click)="showMenu()">
+          <mat-icon>menu</mat-icon>
+       </button>
+       </span>
+
+      </div>
+      <div>
+
+      </div>
+
+    </div>
+  </div>
+ <div fxLayout="row" *ngIf="showMenus">
+  <div fxLayout="column" fxFlex="70">
+  </div>
+  <div fxLayout="column" fxFlex="30">
+    <mat-selection-list #menu [multiple]="false">
+      <mat-list-option *ngFor="let menu of menus">
+        <mat-icon mat-list-icon>sports_kabaddi</mat-icon>
+        <div mat-line>{{menu}}</div>
+      </mat-list-option>
+    </mat-selection-list>
+  </div>
+ </div>
+</div>
+
+
