@@ -1,4 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
+import { ReactiveFormsModule } from '@angular/forms';
 import { NgModule, NO_ERRORS_SCHEMA } from '@angular/core';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppRoutingModule } from './app-routing.module';
@@ -16,7 +17,6 @@ import { MainComponent } from './component/main/main.component';
 import { RegistrationComponent } from './component/registration/registration.component';
 import { FooterComponent } from './core/footer/footer.component';
 
-
 @NgModule({
   declarations: [
     AppComponent,
@@ -33,6 +33,7 @@ import { FooterComponent } from './core/footer/footer.component';
   ],
   imports: [
     BrowserModule,
+    ReactiveFormsModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     MaterialModule,

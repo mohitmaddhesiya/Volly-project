@@ -1,57 +1,117 @@
-<div>
+<div class="container my-5" style="padding-top: 30px;">
+
+  <!-- Section -->
   <section>
-    <!--Section heading-->
-    <h2 class="h1 py-5 font-weight-bold text-center">Why is it so great?</h2>
-    <!--Section description-->
-    <p class="px-5 mb-5 pb-3 lead grey-text text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-      sed do
-      eiusmod tempor incididunt ut labore et dolore magna aliqua.
-      Ut enim ad minim veniam.</p>
-    <div class="row pt-2">
+
+    <h1 class="font-weight-normal text-center dark-grey-text pb-2 display-4"><strong>Football Under 20</strong></h1>
+    <hr class="w-header my-4">
+    <p class="lead text-center text-muted pt-2 mb-5">We waited until we could do it right. Then we did! Instead of
+      creating a carbon copy.</p>
+      <div class="row" style="margin-top: -28px;">
+        <div class="col-5" style="text-align: end;">
+          <span class="material-icons" style="font-size: 36px;">
+            calendar_today
+          </span>
+        </div>
+        <div  class="col-6" style="padding-bottom: 10px;font-size: 36px;font-family: serif;font-weight: bold; text-align: left;">
+          August 15, 2020
+        </div>
+      </div>
+    <!--First row-->
+    <div class="row d-flex align-items-center justify-content-center" style="margin-top: 10px;">
       <!--Grid column-->
-      <div class="col-lg-5 text-center text-lg-left">
-        <img src="https://mdbootstrap.com/img/Photos/Others/screens-section.jpg" alt="" class="img-fluid z-depth-0">
+      <div class="col-md-6 col-xl-5">
+        <!--Form-->
+        <div class="card" style="text-align: center;">
+          <div class="card-body z-depth-2 px-4">
+            <div style="padding-top: 10px; ">
+              <img
+                src="https://demo.goodlayers.com/bigslam/homepages/soccer02/wp-content/uploads/sites/5/2019/09/flag-13.png">
+              <ul class="header text" style="font-size: 22px;font-weight: 900;padding-top: 33px;">
+                <span>188 <small>days</small></span> <span> 19 <small>hrs</small></span> <span> 36
+                  <small>mins</small></span> <span> {{timeLeft}} <small>secs</small></span> </ul>
+            </div>
+            <div class="md-form mt-3" style="padding-top: 15px; ">
+              <p>
+                <mat-form-field appearance="outline">
+                  <mat-label>Enter Team Name</mat-label>
+                  <input matInput placeholder="Team Name">
+                  <mat-icon matSuffix>people_outline</mat-icon>
+                  <mat-hint>Team Name</mat-hint>
+                </mat-form-field>
+              </p>
+            </div>
+            <div class="md-form mt-3">
+              <div class="row">
+                <div class="col-6">
+                  <div class="custom-file">
+                    <input type="file" class="custom-file-input" id="inputGroupFile01"
+                      aria-describedby="inputGroupFileAddon01"  (change)="onSelectFile($event)">
+                    <label class="custom-file-label" for="inputGroupFile01" style="padding-right: 83px;">Team logo</label>
+                  </div>
+                </div>
+                <div class="col-6">
+                  <img src="{{url}}" class="rounded-sm" alt="100x100" style="max-width: 65%;height: auto;padding-left: 20px;">
+                </div>
+              </div>
+            </div>
+            <div class="md-form mt-3">
+              <div class="row">
+                <div class="col-8"  style="text-align: end;">
+                  <form [formGroup]="registerForm">
+                    <p>
+                      <mat-form-field appearance="outline">
+                        <mat-label>Player Name</mat-label>
+                        <input matInput placeholder="Team Name" formControlName="playeName">
+                        <mat-icon matSuffix>emoji_people</mat-icon>
+                        <mat-hint>Enter player name and click add button</mat-hint>
+                      </mat-form-field>
+                    </p>
+                  </form>
+                </div>
+                <div class="col-4" style="text-align: left;">
+                  <button mat-fab color="primary" (click)="addPlayer()" aria-label="Example icon button with a delete icon" style="background-color: #252525;">
+                    <mat-icon>add</mat-icon>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="md-form mt-3" *ngIf="playerDetails.length>0">
+               <div>
+                <table id="dt-fixed-footer" class="table" cellspacing="0" width="100%">
+                  <thead>
+                    <tr>
+                      <th class="th-sm">Player Name
+                      </th>
+                      <th class="th-sm">Upload photo
+                      </th>
+                      <th class="th-sm">Details
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr *ngFor="let player of playerDetails; let i = index">
+                      <td>{{player}}</td>
+                      <td><mat-icon>attach_file</mat-icon></td>
+                      <td style="cursor: pointer;">
+                        <mat-icon (click)="delete(i)">delete</mat-icon>
+                       </td>
+                    </tr>
+                  </tbody>
+                </table>
+               </div>
+            </div>
+            <div class="text-center my-3" >
+              <button class="btn btn-indigo btn-block" style="background-color: #252525!important;">Registation</button>
+            </div>
+          </div>
+        </div>
+        <!--/.Form-->
       </div>
       <!--Grid column-->
-      <div class="col-lg-7">
-        <!--Grid row-->
-        <div class="row pb-3">
-          <div class="col-2 col-md-1">
-          </div>
-          <div class="col-10">
-            <div class="md-form">
-              <mdb-icon fas icon="user" class="prefix grey-text"></mdb-icon>
-              <input mdbInput type="text" id="form3" class="form-control">
-              <label for="form3">Your name</label>
-            </div>
-          </div>
-        </div>
-        <!--Grid row-->
-        <div class="row pb-3">
-          <div class="col-2 col-md-1">
-          </div>
-          <div class="col-10">
-            <div class="md-form">
-              <mdb-icon fas icon="envelope" class="prefix"></mdb-icon>
-              <input mdbInput mdbValidate minLength="8" maxLength="25" type="email"
-                     class="form-control" id="form9">
-              <label for="form9">Type your e-mail</label>
-            </div>
-          </div>
-        </div>
-        <div class="row pb-3">
-          <div class="col-2 col-md-1">
-          </div>
-          <div class="col-10">
-            <div class="md-form">
-              <mdb-icon fas icon="user" class="prefix grey-text"></mdb-icon>
-              <input mdbInput type="text" id="form3" class="form-control">
-              <label for="form3">Your name</label>
-            </div>
-          </div>
-        </div>
     </div>
-    </div>
+    <!--First row-->
 
   </section>
+  <!-- Section -->
+
 </div>

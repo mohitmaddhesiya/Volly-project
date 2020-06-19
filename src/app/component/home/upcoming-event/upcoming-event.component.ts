@@ -8,7 +8,7 @@ import { Router } from '@angular/router';
 })
 export class UpcomingEventComponent implements OnInit {
   cards = [{
-      title: 'Card Title 1',
+      title: 'Football Under 20',
       description: 'This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.',
       buttonText: 'Button',
       img: 'https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(34).jpg'
