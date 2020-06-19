@@ -1,0 +1,60 @@
+<div style="padding-top: 40px; background-image: url(https://demo.goodlayers.com/bigslam/homepages/soccer02/wp-content/uploads/sites/5/2019/10/bg-Latest-hp2.jpg);">
+  <div class="text-center">
+    <h3 style="font-size: 32px ;font-weight: 600 ;letter-spacing: 0px ;text-transform: none ;color: #f3f3f3;">Upcoming Events <span class="gdlr-core-title-item-title-divider gdlr-core-skin-divider"></span></h3>
+    <hr style="border-top: 4px solid #e31b23;width: 11% !important;margin-top:0px;margin-bottom: 0rem !important;">
+  </div>
+
+  <section class="text-center pb-3 my-5">
+
+    <mdb-carousel [isControls]="true" class="carousel-multi-item multi-animation" [type]="'carousel-multi-item'"
+      [animation]="'slide'">
+      <mdb-carousel-item *ngFor="let item of slides; let i = index">
+        <div class="col-md-4 pb-2" *ngFor="let card of item; let cardIndex = index">
+          <div style="max-width: 20rem;">
+            <section>
+              <ul class="header text">
+                <span>188 <small>days</small></span> <span> 19 <small>hrs</small></span> <span> 36
+                  <small>mins</small></span> <span> {{timeLeft}} <small>secs</small></span> </ul>
+              <div class="tab-content card">
+                <!--Panel 1-->
+                <div class="tab-pane fade in show active" id="panel1" role="tabpanel">
+                  <mdb-card style="background: #f3f3f3 !important">
+                    <!--Card image-->
+
+                    <!--Card content-->
+                    <mdb-card-body>
+                      <!--Title-->
+                      <mdb-card-title>
+                        <h4>Football</h4>
+                      </mdb-card-title>
+                      <img
+                        src="https://demo.goodlayers.com/bigslam/homepages/soccer02/wp-content/uploads/sites/5/2019/09/flag-13.png">
+                      <!--Text-->
+                      <mdb-card-text>
+                        <span>
+                          Some quick example text to build on the card title and make up the bulk of the
+                          card's
+                          content.
+                        </span>
+
+                      </mdb-card-text>
+                      <span>
+                        <mdb-icon fab icon="500px"></mdb-icon> August 13, 2020
+                      </span>
+                    </mdb-card-body>
+                  </mdb-card>
+                </div>
+                <!--/.Panel 1-->
+              </div>
+              <ul class="header1" (click)="onClickRegistration()">
+                <span>
+                  Registation now
+                </span>
+              </ul>
+            </section>
+          </div>
+        </div>
+      </mdb-carousel-item>
+    </mdb-carousel>
+  </section>
+</div>
