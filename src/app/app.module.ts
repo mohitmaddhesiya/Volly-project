@@ -16,6 +16,13 @@ import { TopPlayerComponent } from './component/home/top-player/top-player.compo
 import { MainComponent } from './component/main/main.component';
 import { RegistrationComponent } from './component/registration/registration.component';
 import { FooterComponent } from './core/footer/footer.component';
+import { LoginComponent } from './core/login/login.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
+import { AnalyticsComponent } from './dashboard/analytics/analytics.component';
+import { NgChartjsModule } from 'ng-chartjs';
+import { LineChartComponent } from './dashboard/analytics/line-chart/line-chart.component';
+import { RadarComponent } from './dashboard/analytics/radar/radar.component';
+import { PieComponent } from './dashboard/analytics/pie/pie.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +36,13 @@ import { FooterComponent } from './core/footer/footer.component';
     TopPlayerComponent,
     MainComponent,
     RegistrationComponent,
-    FooterComponent
+    FooterComponent,
+    LoginComponent,
+    DashboardComponent,
+    AnalyticsComponent,
+    LineChartComponent,
+    RadarComponent,
+    PieComponent
   ],
   imports: [
     BrowserModule,
@@ -37,6 +50,7 @@ import { FooterComponent } from './core/footer/footer.component';
     AppRoutingModule,
     BrowserAnimationsModule,
     MaterialModule,
+    NgChartjsModule,
     MDBBootstrapModule.forRoot()
   ],
   providers: [],
