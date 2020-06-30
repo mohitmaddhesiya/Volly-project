@@ -9,40 +9,40 @@ export class UpcomingMatchComponent implements OnInit {
   upcomingMatchs = [{
     firstMatch: 'Juventus',
     scondMatch: 'Real Soccer',
-    firstMathcIcon: 'https://demo.goodlayers.com/bigslam/homepages/soccer02/wp-content/uploads/sites/5/2019/09/flag-4.png',
-    secondMathcIcon: 'https://demo.goodlayers.com/bigslam/homepages/soccer02/wp-content/uploads/sites/5/2019/09/flag-15.png',
+    firstMathcIcon: 'assets/upcoming-matches/fotballlMatch1.png',
+    secondMathcIcon: 'assets/upcoming-matches/match2.png',
     date: 'August 15, 2020',
     venu: ' Allianz Stadium'
   },
   {
     firstMatch: 'Spursvus',
     scondMatch: 'Valenciadd',
-    firstMathcIcon: 'https://demo.goodlayers.com/bigslam/homepages/soccer02/wp-content/uploads/sites/5/2019/09/flag-16.png',
-    secondMathcIcon: 'https://demo.goodlayers.com/bigslam/homepages/soccer02/wp-content/uploads/sites/5/2019/09/flag-13.png',
+    firstMathcIcon: 'assets/upcoming-matches/match3.png',
+    secondMathcIcon: 'assets/upcoming-matches/match4.png',
     date: 'August 17, 2020',
     venu: ' Allianz Stadium'
   },
   {
     firstMatch: 'Juventus',
     scondMatch: 'Real Soccer',
-    firstMathcIcon: 'https://demo.goodlayers.com/bigslam/homepages/soccer02/wp-content/uploads/sites/5/2019/09/flag-4.png',
-    secondMathcIcon: 'https://demo.goodlayers.com/bigslam/homepages/soccer02/wp-content/uploads/sites/5/2019/09/flag-15.png',
-    date: 'August 15, 2020',
+    firstMathcIcon: 'assets/upcoming-matches/fotballlMatch1.png',
+    secondMathcIcon: 'assets/upcoming-matches/match2.png',
+    date: 'August 19, 2020',
     venu: ' Allianz Stadium'
   },
   {
     firstMatch: 'Spursvus',
     scondMatch: 'Valenciadd',
-    firstMathcIcon: 'https://demo.goodlayers.com/bigslam/homepages/soccer02/wp-content/uploads/sites/5/2019/09/flag-16.png',
-    secondMathcIcon: 'https://demo.goodlayers.com/bigslam/homepages/soccer02/wp-content/uploads/sites/5/2019/09/flag-13.png',
-    date: 'August 17, 2020',
+    firstMathcIcon: 'assets/upcoming-matches/match3.png',
+    secondMathcIcon: 'assets/upcoming-matches/match4.png',
+    date: 'August 20, 2020',
     venu: ' Allianz Stadium'
   }, {
     firstMatch: 'Juventus',
     scondMatch: 'Real Soccer',
-    firstMathcIcon: 'https://demo.goodlayers.com/bigslam/homepages/soccer02/wp-content/uploads/sites/5/2019/09/flag-4.png',
-    secondMathcIcon: 'https://demo.goodlayers.com/bigslam/homepages/soccer02/wp-content/uploads/sites/5/2019/09/flag-15.png',
-    date: 'August 15, 2020',
+    firstMathcIcon: 'assets/upcoming-matches/fotballlMatch1.png',
+    secondMathcIcon: 'assets/upcoming-matches/match2.png',
+    date: 'August 21, 2020',
     venu: ' Allianz Stadium'
   }];
   latestResult: any = [{
@@ -50,8 +50,8 @@ export class UpcomingMatchComponent implements OnInit {
     scondMatch: 'Valenciadd',
     firstMatchScore: 2,
     secondMatchScore: 1,
-    firstMathcIcon: 'https://demo.goodlayers.com/bigslam/homepages/soccer02/wp-content/uploads/sites/5/2019/09/flag-16.png',
-    secondMathcIcon: 'https://demo.goodlayers.com/bigslam/homepages/soccer02/wp-content/uploads/sites/5/2019/09/flag-13.png',
+    firstMathcIcon: 'assets/upcoming-matches/match3.png',
+    secondMathcIcon: 'assets/upcoming-matches/match4.png',
     date: 'August 17, 2020',
     venu: ' Allianz Stadium'
   }, {
@@ -59,8 +59,8 @@ export class UpcomingMatchComponent implements OnInit {
     scondMatch: 'Real Soccer',
     firstMatchScore: 1,
     secondMatchScore: 0,
-    firstMathcIcon: 'https://demo.goodlayers.com/bigslam/homepages/soccer02/wp-content/uploads/sites/5/2019/09/flag-4.png',
-    secondMathcIcon: 'https://demo.goodlayers.com/bigslam/homepages/soccer02/wp-content/uploads/sites/5/2019/09/flag-15.png',
+    firstMathcIcon: 'assets/upcoming-matches/fotballlMatch1.png',
+    secondMathcIcon: 'assets/upcoming-matches/match2.png',
     date: 'August 15, 2020',
     venu: ' Allianz Stadium'
   },
@@ -69,8 +69,8 @@ export class UpcomingMatchComponent implements OnInit {
     scondMatch: 'Valenciadd',
     firstMatchScore: 0,
     secondMatchScore: 2,
-    firstMathcIcon: 'https://demo.goodlayers.com/bigslam/homepages/soccer02/wp-content/uploads/sites/5/2019/09/flag-16.png',
-    secondMathcIcon: 'https://demo.goodlayers.com/bigslam/homepages/soccer02/wp-content/uploads/sites/5/2019/09/flag-13.png',
+    firstMathcIcon: 'assets/upcoming-matches/match3.png',
+    secondMathcIcon: 'assets/upcoming-matches/match4.png',
     date: 'August 17, 2020',
     venu: ' Allianz Stadium'
   }, {
@@ -78,8 +78,8 @@ export class UpcomingMatchComponent implements OnInit {
     scondMatch: 'Real Soccer',
     firstMatchScore: 2,
     secondMatchScore: 1,
-    firstMathcIcon: 'https://demo.goodlayers.com/bigslam/homepages/soccer02/wp-content/uploads/sites/5/2019/09/flag-4.png',
-    secondMathcIcon: 'https://demo.goodlayers.com/bigslam/homepages/soccer02/wp-content/uploads/sites/5/2019/09/flag-15.png',
+    firstMathcIcon: 'assets/upcoming-matches/fotballlMatch1.png',
+    secondMathcIcon: 'assets/upcoming-matches/match2.png',
     date: 'August 15, 2020',
     venu: ' Allianz Stadium'
   },
@@ -88,8 +88,8 @@ export class UpcomingMatchComponent implements OnInit {
     scondMatch: 'Valenciadd',
     firstMatchScore: 1,
     secondMatchScore: 2,
-    firstMathcIcon: 'https://demo.goodlayers.com/bigslam/homepages/soccer02/wp-content/uploads/sites/5/2019/09/flag-16.png',
-    secondMathcIcon: 'https://demo.goodlayers.com/bigslam/homepages/soccer02/wp-content/uploads/sites/5/2019/09/flag-13.png',
+    firstMathcIcon: 'assets/upcoming-matches/match3.png',
+    secondMathcIcon: 'assets/upcoming-matches/match4.png',
     date: 'August 17, 2020',
     venu: ' Allianz Stadium'
   }];

@@ -9,11 +9,11 @@ export class TopPlayerComponent implements OnInit {
   stars = Array(5);
   members: any = [
     {
-      image: 'https://mdbootstrap.com/img/Photos/Avatars/img%20(9).jpg',
+      image: 'assets/top-player/danylo.jpg',
       name: 'Danylo Tesenko (Footbal Player)'
     },
     {
-      image: 'https://splash.stylemixthemes.com/esport/wp-content/uploads/sites/12/1988/04/03-445x445.jpg',
+      image: 'assets/top-player/colin.jpg',
       name: 'Colin Kaepernick (Basketball Player)'
     },
   ];

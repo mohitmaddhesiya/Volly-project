@@ -12,7 +12,7 @@ export class RegistrationComponent implements OnInit {
   playeName = '';
   registerForm: FormGroup;
   playerDetails = [];
-  url = 'https://mdbootstrap.com/img/Photos/Others/placeholder.jpg';
+  url = 'assets/placeholder.jpg';
   constructor(private formBuilder: FormBuilder) { }
 
   ngOnInit(): void {

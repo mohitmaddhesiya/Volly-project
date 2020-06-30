@@ -33,7 +33,7 @@ const routes: Routes = [
       breadcrumb: 'registration'
     }
   }]},
-  { path: '**', redirectTo: 'main', pathMatch: 'full' },
+  { path: '**', redirectTo: 'dashboard/home', pathMatch: 'full' },
 ];
 
 @NgModule({
